@@ -3,7 +3,7 @@ entries:
   ibm-cpq-prod:
   - apiVersion: v2
     appVersion: 10.0.0.10
-    created: "2020-09-10T13:50:23.377913623-04:00"
+    created: "2021-02-23T22:12:23.513193879-05:00"
     description: |-
       IBM Sterling Configure, Price, Quote (CPQ) solution enables you to quickly configure, price, quote and order the right products and services.
       To sell competitively in today’s multichannel environment, organizations need a way to easily manage product and service configuration and pricing rules that allow prospects, customers, sales staff, call center representatives and Business Partners to quickly find, configure and order the right products and services.
@@ -44,7 +44,7 @@ entries:
     version: 3.1.0
   - apiVersion: v2
     appVersion: 10.0.0.6
-    created: "2020-09-10T13:50:23.343192795-04:00"
+    created: "2021-02-23T22:12:23.497435202-05:00"
     description: |-
       IBM Sterling Configure, Price, Quote (CPQ) solution enables you to quickly configure, price, quote and order the right products and services.\n
       To sell competitively in today’s multichannel environment, organizations need a way to easily manage product and service configuration and pricing rules that allow prospects, customers, sales staff, call center representatives and Business Partners to quickly find, configure and order the right products and services.\n
@@ -86,7 +86,7 @@ entries:
   ibm-object-storage-plugin:
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2020-09-10T13:50:23.381240361-04:00"
+    created: "2021-02-23T22:12:23.516354199-05:00"
     description: |
       Chart for deploying ibmcloud object storage plugin.
       IBM Cloud Object Storage is persistent, highly available storage
@@ -121,7 +121,45 @@ entries:
   ibm-oms-ent-prod:
   - apiVersion: v2
     appVersion: 10.0.0
-    created: "2020-09-10T13:50:23.431481905-04:00"
+    created: "2021-02-23T22:12:23.552121556-05:00"
+    dependencies:
+    - alias: sch
+      name: ibm-sch
+      repository: '@sch'
+      version: 1.2.15
+    description: |-
+      IBM Order management Software Enterprise Edition v10 provides cross-channel order orchestration capabilities to enable intelligent brokering of orders across many disparate systems. It also provides a global view of inventory across the supply chain and enables business users to make changes to order process.
+      Documentation
+      For additional details regarding install parameters check http://ibm.biz/oms-helm-readme.
+      License
+      By installing this product you accept the license terms http://ibm.biz/oms-license and http://ibm.biz/oms-apps-license.
+    digest: 0a412a2fe21cb5206750a03d476b83e0c022270817db17d8b8bb1dc182449eaf
+    home: http://ibm.biz/oms-home
+    icon: https://raw.githubusercontent.com/IBM/charts/master/logo/ibm-oms-logo.png
+    keywords:
+    - oms
+    - sterling
+    - yantra
+    - order
+    - fulfillment
+    - om
+    - amd64
+    - ppc64le
+    - framework
+    - Commercial
+    - RHOCP
+    - Other
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: IBM
+    name: ibm-oms-ent-prod
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/ntinvo/helm-charts/master/charts/ibm-oms-ent-prod-6.0.0.tgz
+    version: 6.0.0
+  - apiVersion: v2
+    appVersion: 10.0.0
+    created: "2021-02-23T22:12:23.539265944-05:00"
     dependencies:
     - alias: sch
       name: ibm-sch
@@ -133,7 +171,7 @@ entries:
       For additional details regarding install parameters check http://ibm.biz/oms-helm-readme.
       License
       By installing this product you accept the license terms http://ibm.biz/oms-license and http://ibm.biz/oms-apps-license."
-    digest: 8deba5a417f3f0e116fdf9c99ff2c70c500263d41639795b59cef828e0baf890
+    digest: b10b22777c680878e518b9d19b88e9bb443a38f38d2723bae913ebffaf319779
     home: http://ibm.biz/oms-home
     icon: https://raw.githubusercontent.com/IBM/charts/master/logo/ibm-oms-logo.png
     keywords:
@@ -159,7 +197,7 @@ entries:
     version: 5.0.1-alpha
   - apiVersion: v2
     appVersion: 10.0.0
-    created: "2020-09-10T13:50:23.410842243-04:00"
+    created: "2021-02-23T22:12:23.528173422-05:00"
     dependencies:
     - alias: sch
       name: ibm-sch
@@ -197,7 +235,7 @@ entries:
   ibm-oms-pro-prod:
   - apiVersion: v2
     appVersion: 10.0.0
-    created: "2020-09-10T13:50:23.492638827-04:00"
+    created: "2021-02-23T22:12:23.588097819-05:00"
     dependencies:
     - alias: sch
       name: ibm-sch
@@ -209,7 +247,45 @@ entries:
       For additional details regarding install parameters check http://ibm.biz/oms-helm-readme.
       License
       By installing this product you accept the license terms http://ibm.biz/oms-license and http://ibm.biz/oms-apps-license.
-    digest: fcda3392a9434cb3ee20f9e07030c36790fc755c19d5d71b11b88c4be496b75f
+    digest: eec162c28b185aff70e5606e2dd5a98f2ff7d131fea56a6bad7a5ab13b556312
+    home: http://ibm.biz/oms-home
+    icon: https://raw.githubusercontent.com/IBM/charts/master/logo/ibm-oms-logo.png
+    keywords:
+    - oms
+    - sterling
+    - yantra
+    - order
+    - fulfillment
+    - om
+    - amd64
+    - ppc64le
+    - framework
+    - Commercial
+    - RHOCP
+    - Other
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: IBM
+    name: ibm-oms-pro-prod
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/ntinvo/helm-charts/master/charts/ibm-oms-pro-prod-6.0.0.tgz
+    version: 6.0.0
+  - apiVersion: v2
+    appVersion: 10.0.0
+    created: "2021-02-23T22:12:23.575054282-05:00"
+    dependencies:
+    - alias: sch
+      name: ibm-sch
+      repository: '@sch'
+      version: 1.2.15
+    description: |-
+      IBM Order management Software Professional Edition v10 provides cross-channel order orchestration capabilities to enable intelligent brokering of orders across many disparate systems. It also provides a global view of inventory across the supply chain and enables business users to make changes to order process.
+      Documentation
+      For additional details regarding install parameters check http://ibm.biz/oms-helm-readme.
+      License
+      By installing this product you accept the license terms http://ibm.biz/oms-license and http://ibm.biz/oms-apps-license.
+    digest: 3e23674914554afe929521a01074f3224e0311ea1d8ea9794a877ec0c6e521d5
     home: https://github.ibm.com/Order-Management-Fulfillment/ibm-oms
     icon: https://raw.githubusercontent.com/IBM/charts/master/logo/ibm-oms-logo.png
     keywords:
@@ -235,7 +311,7 @@ entries:
     version: 5.0.1-alpha
   - apiVersion: v2
     appVersion: 10.0.0
-    created: "2020-09-10T13:50:23.466491552-04:00"
+    created: "2021-02-23T22:12:23.56405196-05:00"
     dependencies:
     - alias: sch
       name: ibm-sch
@@ -243,11 +319,12 @@ entries:
       version: 1.2.15
     description: |-
       IBM Order management Software Professional Edition v10 provides cross-channel order orchestration capabilities to enable intelligent brokering of orders across many disparate systems. It also provides a global view of inventory across the supply chain and enables business users to make changes to order process.
-
-      For additional details regarding install parameters check: http://ibm.biz/oms-helm-readme.
-
+      Documentation
+      For additional details regarding install parameters check http://ibm.biz/oms-helm-readme.
+      License
       By installing this product you accept the license terms http://ibm.biz/oms-license and http://ibm.biz/oms-apps-license.
-    digest: e1bd6eedeedbd07d38a610bb79550d2815555f444493f6d8331d395212813772
+    digest: fcf5196ae31da54055b8b13d3f43a5b3d16f7cc5be13d5cb5a7a323163a46c5f
+    home: https://github.ibm.com/Order-Management-Fulfillment/ibm-oms
     icon: https://raw.githubusercontent.com/IBM/charts/master/logo/ibm-oms-logo.png
     keywords:
     - oms
@@ -262,7 +339,7 @@ entries:
     - Commercial
     - RHOCP
     - Other
-    kubeVersion: '>=1.11.0'
+    kubeVersion: '>=1.11.0+0'
     maintainers:
     - name: IBM
     name: ibm-oms-pro-prod
@@ -273,7 +350,7 @@ entries:
   ibm-operator-catalog-enablement:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2020-09-10T13:50:23.4945435-04:00"
+    created: "2021-02-23T22:12:23.58905012-05:00"
     description: |
       IBM Operator Catalog enablement deploys custom CatalogSources for operators
       available to deploy and maintain IBM products.  The operators are publically
@@ -306,7 +383,7 @@ entries:
   nodejs-ex-k:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-10T13:50:23.496173535-04:00"
+    created: "2021-02-23T22:12:23.589810932-05:00"
     description: A Helm chart for Kubernetes
     digest: 9f8eca455f8379baddd6ab61bd5517373514bb99bedbbddffb98ad88ac9841cc
     name: nodejs-ex-k
@@ -316,7 +393,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-10T13:50:23.495245939-04:00"
+    created: "2021-02-23T22:12:23.589394946-05:00"
     description: A Helm chart for Kubernetes
     digest: 64b36fee719567e2aae8cb6186ba02a56dc62a90df71af7f90cc1d9d2cd1fb25
     name: nodejs-ex-k
@@ -324,4 +401,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/ntinvo/helm-charts/master/charts/nodejs-ex-k-0.1.1.tgz
     version: 0.1.1
-generated: "2020-09-10T13:50:23.277806322-04:00"
+generated: "2021-02-23T22:12:23.478831059-05:00"
